@@ -1,0 +1,218 @@
+/* ======== Herencia desde body ======== */
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* Heredado por el texto */
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+  }
+  
+  /* ======== Banner fijo ======== */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #444;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  main {
+    margin-top: 80px; /* evita que el header tape contenido */
+    padding: 20px;
+  }
+  
+  /* ======== Menú con flexbox ======== */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+  }
+  
+  /* ======== Selectores ======== */
+  /* Tipo */
+  p {
+    line-height: 1.5;
+  }
+  
+  /* Clase */
+  .destacado {
+    background-color: #ffeb99;
+    padding: 5px;
+  }
+  
+  /* ID */
+  #especial {
+    color: darkred;
+    font-weight: bold;
+  }
+  
+  /* Descendiente */
+  nav ul li a {
+    font-weight: bold;
+  }
+  
+  /* Grupo */
+  h1, h2, h3 {
+    font-family: "Trebuchet MS", sans-serif;
+  }
+  
+  /* ======== Conflictos de cascada ======== */
+  p {
+    color: blue;
+  }
+  p {
+    color: green; /* gana por estar último */
+  }
+  
+  /* ======== Conflictos de especificidad ======== */
+  #especial {
+    color: purple;
+  }
+  #especial {
+    color: orange !important; /* gana con prioridad */
+  }
+  
+  /* ======== Box model para tarjetas ======== */
+  .tarjeta {
+    width: 300px;
+    border: 2px solid #333;
+    padding: 15px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    border-radius: 8px;
+    position: relative; /* necesario para el badge */
+  }
+  
+  /* ======== Badge en artículos ======== */
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: crimson;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+  }
+  
+  /* ======== Formulario de contacto ======== */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #f0f4ff; /* fondo suave visible */
+    padding: 20px;
+    border-radius: 10px; /* bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  form p {
+    margin-bottom: 15px;
+  }
+  
+  input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 8px; /* bordes redondeados */
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  button {
+    background: #4a76ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #365ad6;
+  }
+  
+  /* ======== Tablas ======== */
+  table {
+    width: 100%;
+    border-collapse: collapse; /* colapsar bordes */
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #333;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #f9f9f9; /* gris claro */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #e6f0ff; /* azul muy claro */
+  }
+  
+  th {
+    background-color: #4a76ff;
+    color: white;
+  }
+  
+  /* ======== Media queries ======== */
+  /* 1. Tablets y pantallas medianas */
+  @media (max-width: 1024px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .tarjeta {
+      width: 90%;
+    }
+  }
+  ain {
+    color: black; /* Todo el texto en main es negro */
+  }
+  
+  main p {
+    color: black; /* Refuerzo específico para párrafos */
+  }
+  /* 2. Móviles pequeños */
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  
+    header {
+      padding: 15px 0;
+    }
+  }
+  
