@@ -1,3 +1,8 @@
+Juan Camilo Uribe Mendoza - 1152326
+la url de la pagina no sirve por que cometi un error al nombrar Index.html en vez de index.html, hize un cambio fuera del tiempo del readme.md para explicar el error enesta url: https://camilo2212-ui.github.io/Techblog-Intercativo/ 
+
+Ciclo de vida de una petición web:
+
 Etapas principales
 
 Ingreso de la URL
