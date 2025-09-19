@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de contacto con formulario para enviar mensajes.">
+  <title>contacto.html - Contacto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><article><a href="index.html">Inicio</a></article></li>
+        <li><article><a href="recursos.html">Recursos</a></article></li>
+        <li><article><a href="acerca.html">Acerca</a></article></li>
+        <li><article><a href="contacto.html">Contacto</a></article></li>
+        <li><article><a href="articulos.html">Artículos</a></article></li>
+      </ul>
+    </nav>
+    <h1>Contacto</h1>
+  </header>
+
+  <main>
+    <section id="formulario-contacto">
+      <form action="#" method="post">
+        <p>
+          <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+        </p>
+        <p>
+          <input type="email" name="correo" placeholder="ejemplo@mail.com" required>
+        </p>
+        <p>
+          <input type="number" name="edad" placeholder="Tu edad">
+        </p>
+        <p>
+          <select name="tema" required>
+            <option value="" selected>Selecciona un tema</option>
+            <option value="consulta">Consulta general</option>
+            <option value="soporte">Soporte técnico</option>
+            <option value="otros">Otros</option>
+          </select>
+        </p>
+        <p>
+          <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+        </p>
+        <p>
+          <button type="submit">Enviar</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Contacto</p>
+  </footer>
+</body>
+</html>
